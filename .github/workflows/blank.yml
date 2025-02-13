@@ -29,4 +29,5 @@ jobs:
           pwd
           echo hello!!!
           git log
+          git show HEAD
           git show --name-only --pretty=format: --diff-filter=ACM HEAD

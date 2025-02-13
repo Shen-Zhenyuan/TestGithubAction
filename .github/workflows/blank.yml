@@ -32,5 +32,4 @@ jobs:
         run: |
           pwd
           echo hello!!!
-          git log
-          gh pr diff 10
+          gh pr diff --name-only

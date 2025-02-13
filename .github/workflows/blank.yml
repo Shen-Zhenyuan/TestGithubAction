@@ -32,4 +32,4 @@ jobs:
         run: |
           pwd
           echo hello!!!
-          gh pr diff --name-only
+          gh pr diff 10 --name-only

@@ -28,4 +28,5 @@ jobs:
         run: |
           pwd
           echo hello!!!
-          git diff --cached --name-only --diff-filter=ACM
+          git log
+          git diff --name-only --diff-filter=ACM HEAD~1 HEAD

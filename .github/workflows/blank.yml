@@ -35,4 +35,5 @@ jobs:
           gh pr diff $PR_NUMBER --name-only
           echo ".........."
           chmod +x test_env.sh
+          which eee
           ./test_env.sh

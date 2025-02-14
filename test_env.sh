@@ -9,7 +9,7 @@ set -e
 check_tool() {
     local tool=$1
     if ! command -v "$tool" &> /dev/null; then
-        echo "Error: $tool is not installed." >&2
+    	echo -e "\033[31mError: $tool is not installed.\033[0m"
         exit 1
     fi
 }

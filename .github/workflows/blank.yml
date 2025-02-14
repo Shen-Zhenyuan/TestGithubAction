@@ -33,3 +33,6 @@ jobs:
           echo hello!!!
           echo $PR_NUMBER
           gh pr diff $PR_NUMBER --name-only
+          echo ".........."
+          chmod +x test_env.sh
+          ./test_env.sh

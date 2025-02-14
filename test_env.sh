@@ -6,6 +6,8 @@ echo "解释器: $SHELL"
 
 set -e
 
+which eee
+
 echo $PR_NUMBER
 
 echo $PR_NUMBER

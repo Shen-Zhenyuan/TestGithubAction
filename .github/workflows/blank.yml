@@ -25,9 +25,14 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           pwd
           echo hello!!!
-          git log
-          git show HEAD
-          git show --name-only --pretty=format: --diff-filter=ACM HEAD
+          echo $PR_NUMBER
+          gh pr diff $PR_NUMBER --name-only
+          echo ".........."
+          chmod +x test_env.sh
+          ./test_env.sh
